@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: #ED9EAE;
+    border: none;
+    width: 1000px;
+    right: auto;
+}
+
+
+ol {
+    background-color: beige;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+li {
+    background-color: #C66376;
+    margin: 10px;
+    t
+
+}
+
+.fruits {
+    padding: 30px;
+}

@@ -1,0 +1,25 @@
+.element {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    background-color: grey;
+    padding: 100px;
+}
+
+.BlackCard {
+    color: black;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: bisque;
+    
+}
+
+.RedCard {
+    color: red;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: bisque;
+
+}

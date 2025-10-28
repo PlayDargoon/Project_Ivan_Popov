@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: grey;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.element {
+border:  none;
+position: absolute;
+width: 700px;
+height: auto;
+background-color: gainsboro;
+margin-left: 5px;
+padding-left: 5px;
+}
