@@ -1,0 +1,17 @@
+div {
+width: 90vw;
+/* height: 90vh; */
+height: 200vh;
+aspect-ratio: 1;
+margin: auto;
+
+background-color: rgb(151, 151, 224);
+
+background-image: url(images/apple-1.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: local;
+
+}
+
