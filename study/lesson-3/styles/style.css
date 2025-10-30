@@ -1,0 +1,50 @@
+body {
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+.white-space {
+    white-space: pre-wrap;
+    /*пробелы*/
+}
+
+.word-break {
+    word-break: keep-all;
+    /**/
+}
+
+.word-wrap {
+    word-wrap: break-word;
+    /*перенос разбитие слов*/
+}
+
+.mode {
+    /*направление*/
+
+    word-spacing: 2px;
+    /*расстояние*/
+    letter-spacing: 10px;
+    /*символы*/
+}
+
+.transform {
+    /*изменение регист текста*/
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    text-decoration: underline;
+    /*подчркивание*/
+    text-decoration-style: wavy;
+    text-decoration-color: blueviolet;
+
+}
+
+.shadow {
+    /*тень*/
+    text-shadow: 2px 2px 3px green;
+}

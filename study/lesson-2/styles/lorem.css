@@ -1,0 +1,41 @@
+body {
+    background-color: beige;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+
+
+.bold {
+    font-weight: bolder;
+}
+
+/*
+.color {
+
+    color: blueviolet;
+}
+*/
+.font {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+
+span.small {
+    color: brown;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+span.color {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+}
