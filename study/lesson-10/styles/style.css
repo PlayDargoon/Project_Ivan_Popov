@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(75, 68, 68);
+    margin: 0 auto;
+    width: 60%;
+    background-image: url(images/bg-city.jpg);
+    background-attachment: fixed;
+}
+
+.text {
+    background-color: rgb(112, 107, 102, 0.8);
+
+}

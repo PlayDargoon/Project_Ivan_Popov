@@ -1,0 +1,27 @@
+body {
+
+    background-color: rgb(93, 98, 98);
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.4em;
+    padding: 30px;
+}
+
+h1 {
+
+    text-align: center;
+}
+
+div {
+
+    background-color: aquamarine;
+    border: solid 2px blue;
+    
+  
+    /* background-repeat: no-repeat; */
+    /* background-position: center ; */
+   
+    
+    
+}
+

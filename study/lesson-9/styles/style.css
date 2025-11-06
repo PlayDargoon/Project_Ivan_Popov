@@ -1,0 +1,15 @@
+body {
+    background-color: #f6f6f6;
+    background-image: url(images/photo-bg.jpg);
+    /* background-repeat: repeat-x; */
+    /* background-repeat: space; */
+    /* background-repeat: ; */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    /* background-size: contain; */
+    /* background-size: 50% 100%; */
+    /* background-attachment: local fixed scroll; */
+
+    
+}

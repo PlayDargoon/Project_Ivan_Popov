@@ -1,0 +1,22 @@
+body {
+
+    background-color: beige;
+}
+
+.text {
+    margin: 30px
+}
+
+
+h3 {
+    text-align: center;
+   
+}
+
+.block {
+    background-color: rgb(91, 91, 87);
+    padding: 5px;
+    margin-right: 350px;
+    border: solid 3px brown;
+
+}
