@@ -104,7 +104,7 @@ h1 {
 
 .ex-3 .block:first-child {
     background-color: rgb(222, 6, 197);
-    
+
 }
 
 
@@ -132,8 +132,64 @@ h1 {
 
 .ex-3 .block:active::after {
 
-background-color: rgb(226, 7, 7);
-width: 15px;
-height: 10px;
+    background-color: rgb(226, 7, 7);
+    width: 15px;
+    height: 10px;
 
 }
+
+.ex-4 .block {
+    width: 100px;
+    aspect-ratio: 1;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: blueviolet;
+    border-left-color: azure;
+    border-bottom-color: aqua;
+    border-right-color: rgb(194, 8, 8);
+    transition: 0.3s;
+}
+
+.ex-4 .block:hover {
+    transform-origin: 100% 0% 0;
+    transform: rotate(90deg);
+    /* transform: translate(50px, 10px); */
+    /* transform: scale(2, 1.5); */
+
+
+}
+
+
+.ex-5 {
+overflow: hidden;
+}
+
+.ex-5 .callback {
+    
+    background-color: gray;
+    height: 200px;
+    width: 250px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    transform: translateX(calc(-100% - 1em - 10px));
+}
+
+.ex-5 .callback:hover{
+      transform: translateX(calc(-1em - 10px));
+
+}
+.ex-5 .callback::after {
+    content: "Обратная связь";
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    text-align: center;
+
+    transform-origin: 100% 0%;
+    transform: rotate(-90deg);
+}
+
