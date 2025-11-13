@@ -1,13 +1,13 @@
-body {
-    font: optional;
-  background-color: grey;
-  margin: 0 ;
+* {
+  box-sizing: border-box;
   padding: 0;
-  /* width: 100%; */
+  margin: 0 auto;
 }
 
-
-
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: grey;
+}
 
 h1,
 h3 {
@@ -16,31 +16,33 @@ h3 {
 
 .food {
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 70%;
+  width: 55%;
+  margin-top: 30px;
 }
 
 .item {
   background-color: lightslategrey;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
-  width: 140px;
 }
 .item p {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 15px;
+}
+
+.item:hover {
+  background-color: rgb(95, 144, 194);
+  box-shadow: 2px 3px 40px rgb(95, 144, 194);
 }
 
 hr {
-  border: 2px solid rgb(184, 175, 175);
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+  border: 1px solid rgb(184, 175, 175);
+  margin: 20px 30px 20px 30px;
 }
 
 .link {
@@ -49,6 +51,14 @@ hr {
   width: 100%;
   margin-top: 20px;
 }
+
+/*.foot {
+display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  
+}*/
 
 .link a {
   display: inline-block;
@@ -104,4 +114,157 @@ hr {
 .side-menu a {
   text-decoration: none;
   color: black;
+}
+
+.header,
+.menu,
+.footer,
+.container {
+  width: 90% !important;
+  min-width: 320px;
+  margin: 1em auto 0 auto;
+}
+
+.header {
+  background-color: red;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu,
+.footer {
+  background-color: #800020;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.aside {
+  width: 30%;
+}
+
+.aside div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.aside1 {
+  background-color: green;
+  height: 100px;
+  position: relative;
+}
+
+.aside1 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.aside2 {
+  background-color: yellow;
+  height: 150px;
+  position: relative;
+}
+
+.aside2 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main-content {
+  width: 60%;
+  height: 500px;
+  background-color: orange;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-content span {
+  margin-left: 25px;
+}
+
+.section {
+  background-color: yellow;
+  margin: 30px;
+  height: 70px;
+  position: relative;
+}
+.section span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.aside3 {
+  background-color: gold;
+  width: 10%;
+  height: 250px;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside3 span {
+  writing-mode: vertical-lr; /* Направление текста сверху вниз и слева направо */
+  text-align: center;
+}
+
+.foot {
+  background-color: #40e0d0;
+  width: 70%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.foot p {
+  color: white;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb,
+.insta,
+.youtube {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.fb {
+  background-image: url("styles/images/fb_gray.png");
+}
+
+.insta {
+  background-image: url("path/to/image2.jpg");
+}
+
+.youtube {
+  background-image: url("path/to/image3.jpg");
 }
