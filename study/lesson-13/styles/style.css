@@ -161,11 +161,11 @@ h1 {
 
 
 .ex-5 {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .ex-5 .callback {
-    
+
     background-color: gray;
     height: 200px;
     width: 250px;
@@ -176,10 +176,11 @@ overflow: hidden;
     transform: translateX(calc(-100% - 1em - 10px));
 }
 
-.ex-5 .callback:hover{
-      transform: translateX(calc(-1em - 10px));
+.ex-5 .callback:hover {
+    transform: translateX(calc(-1em - 10px));
 
 }
+
 .ex-5 .callback::after {
     content: "Обратная связь";
     background-color: red;
@@ -193,3 +194,133 @@ overflow: hidden;
     transform: rotate(-90deg);
 }
 
+.card {
+    width: 300px;
+    aspect-ratio: 2/3;
+    /*соотношение сторон*/
+    margin: 0 auto;
+    /*Сверху снизу 0 пс длева с права авто*/
+    position: relative;
+    /*позиционирование относительно родителя*/
+    box-shadow: 0px 0px 3px gray;
+}
+
+.card .product,
+.card .description {
+    position: absolute;
+    /*смотрит на родителя не работает если у родителя нет релитив*/
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: #fff;
+    backface-visibility: hidden;
+}
+
+.card .description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.product {
+    transition: 0.5s;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card:hover .product {
+    transform: rotateY(180deg);
+}
+
+.card:hover .description {
+    transform: rotateY(360deg);
+}
+
+
+/*animation*/
+
+.ex-7 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ex-7 .news {
+    text-transform: uppercase;
+    margin-left: 0;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 1em 0;
+    animation: news 5s ease alternate infinite;
+    overflow: hidden;
+}
+
+@keyframes news {
+    from {
+        padding-left: 0;
+    }
+
+    to {
+        padding-left: 100%;
+    }
+}
+
+
+.loader {
+    width: 10px;
+    aspect-ratio: 1;
+    margin: 2em;
+    animation: loading 1s ease  infinite forwards;
+    background-color: transparent;
+
+    box-shadow: -10px 15px 0 gray,
+            10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 35px 0 rgb(244, 221, 221, 0.2),
+            -10px 35px 0 rgb(244, 221, 221, 0.2);
+
+}
+
+@keyframes loading {
+    0% {
+        box-shadow: -10px 15px 0 gray,
+            10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 35px 0 rgb(244, 221, 221, 0.2),
+            -10px 35px 0 rgb(244, 221, 221, 0.2);
+    }
+
+    25% {
+        box-shadow: -10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 15px 0 gray,
+            10px 35px 0 rgb(244, 221, 221, 0.2),
+            -10px 35px 0 rgb(244, 221, 221, 0.2);
+
+
+    }
+
+    50% {
+        box-shadow: -10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 35px 0 gray,
+            -10px 35px 0 rgb(244, 221, 221, 0.2);
+
+
+    }
+
+    75% {
+        box-shadow: -10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 15px 0 rgb(244, 221, 221, 0.2),
+            10px 35px 0 rgb(244, 221, 221, 0.2),
+            -10px 35px 0 gray;
+    }
+
+}
