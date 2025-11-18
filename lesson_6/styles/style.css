@@ -1,0 +1,141 @@
+* {
+   margin: 0;
+   padding: 0;
+
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.container {
+	 display: flex;
+    flex-wrap: wrap; /* Возможность переносить элементы при уменьшении ширины */
+    justify-content: center; /* Центровка элементов по горизонтали */
+    gap: 2em; /* Пространство между элементами */
+    max-width: 100%; /* Максимальная ширина контейнера */
+    padding: 1em;
+    width: 90%;
+    min-width: 320px;
+    margin: 1em auto 0 auto;
+    box-shadow: 0px 0px 5px gray;
+
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.time-zone {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.clock {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 200px;
+    margin: 2em;
+    background-color: green;
+    border: outset 2px black;
+}
+
+.center-point {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 100; /* Чтобы центральная точка была поверх всех стрелок */
+}
+
+.digits {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+}
+
+.digit {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    transform-origin: center;
+}
+  .digit:nth-child(1) { transform: translateY(-50%); top: 5%; }      /* 12 */
+    .digit:nth-child(2) { transform: translate(35%, -25%); top: 10%; right: 25%; } /* 1 */
+    .digit:nth-child(3) { transform: translate(50%, 0%); top: 25%; right: 10%; }   /* 2 */
+    .digit:nth-child(4) { transform: translateX(50%); right: 5%; }                 /* 3 */
+    .digit:nth-child(5) { transform: translate(50%, 50%); bottom: 25%; right: 10%; } /* 4 */
+    .digit:nth-child(6) { transform: translate(35%, 25%); bottom: 10%; right: 25%; } /* 5 */
+    .digit:nth-child(7) { transform: translateY(50%); bottom: 5%; }                /* 6 */
+    .digit:nth-child(8) { transform: translate(-35%, 25%); bottom: 10%; left: 25%; } /* 7 */
+    .digit:nth-child(9) { transform: translate(-50%, 50%); bottom: 25%; left: 10%; } /* 8 */
+    .digit:nth-child(10) { transform: translateX(-50%); left: 5%; }                /* 9 */
+    .digit:nth-child(11) { transform: translate(-50%, 0%); top: 25%; left: 10%; }  /* 10 */
+    .digit:nth-child(12) { transform: translate(-35%, -25%); top: 10%; left: 25%; } /* 11 */
+
+.second {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 2px;
+    height: 90px; 
+    background-color: red;
+    transform-origin: bottom center; 
+    transform: translateX(-50%) rotate(0deg);
+    /* Убрать animation */
+}
+
+.minute {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 4px; 
+    height: 70px; 
+    background-color: blue; 
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    /* Убрать animation */
+}
+
+.hour {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 6px; 
+    height: 50px; 
+    background-color: brown; 
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    /* Убрать animation */
+}
+
+.second,
+.minute,
+.hour {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
