@@ -103,5 +103,122 @@ main>section>p {
 }
 
 section {
-margin-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+
+.line {
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1em;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    color: white;
+    background-color: rgb(86, 86, 86);
+    border-radius: 15px;
+    padding: 16px;
+
+
+}
+
+
+
+.card p {
+
+    font-size: 16px;
+    margin: 13px;
+}
+
+.card>.row {
+
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.row>h3 {
+    margin: auto;
+}
+
+
+
+
+.category,
+.category-back {
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    color: gray;
+    z-index: 1;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.category-back {
+    transform: scale(1.2);
+    transform-origin: 0 0;
+    background-color: aqua;
+    z-index: 0;
+
+
+}
+
+
+.card-2 {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(94, 92, 92, 1);
+    padding: 1em;
+    /* padding-bottom: 80px; */
+    text-align: center;
+}
+
+.sim {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.card-2>p {
+
+    text-align: center;
+    padding-top: 1.5em;
+
+}
+
+.name {
+
+    font-weight: bold;
+    font-size: 25px;
+    margin: 1em;
+}
+
+img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    /* transform: translateX(50%); */
+    margin-bottom: -100px;
+    box-shadow: 2px 3px 5px rgba(94, 92, 92, 1);
+
+
+
+}
+
+img:hover {
+
+
+    box-shadow: 2px 3px 10px rgb(70, 68, 68, 1);
 }
