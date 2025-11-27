@@ -206,7 +206,7 @@ section {
     margin: 1em;
 }
 
-img {
+.mg {
     border-radius: 50%;
     aspect-ratio: 1;
     /* transform: translateX(50%); */
@@ -217,8 +217,77 @@ img {
 
 }
 
-img:hover {
+.mg:hover {
 
 
     box-shadow: 2px 3px 10px rgb(70, 68, 68, 1);
+
 }
+
+.program {
+    height: 400px;
+    overflow: auto;
+}
+
+.program .block {
+    height: 400px;
+}
+
+.program .block .top {
+    position: sticky;
+    top: 0;
+    /* background-color: aqua; */
+    color: white;
+    padding: 10px;
+
+}
+
+.program .block .content {
+    display: flex;
+    align-items: center;
+
+}
+
+.program .block .content .col {
+    padding: 20px;
+}
+
+.program p {
+    font-size: 18px;
+    padding: 5px;
+
+}
+
+.program .content img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+.block:nth-child(1) .top {
+    background-color: rgb(206, 160, 10) !important;
+}
+
+.block:nth-child(2) .top {
+    background-color: cadetblue !important;
+}
+
+.block:nth-child(3) .top {
+    background-color: rgb(51, 11, 211) !important;
+}
+
+.block:nth-child(4) .top {
+    background-color: rgb(183, 13, 216) !important;
+}
+
+.block:nth-child(5) .top {
+    background-color: rgb(232, 8, 8) !important;
+}
+
+.block:nth-child(6) .top {
+    background-color: rgb(5, 224, 16) !important;
+}
+
+
+
+

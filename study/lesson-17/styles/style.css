@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(186, 186, 186);
+}
+
+.container {
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header {
+    background-color: burlywood;
+    flex-basis: 10vh;
+}
+main>section {
+ flex: 1 1 auto;
+ background-color: chocolate;
+}
+main {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+main>aside {
+    background-color: aqua;
+    flex-basis: 20%;
+}
+
+main>section+aside {
+    background-color: rgb(41, 210, 22);
+    flex-basis: 20%;
+}
+
+footer {
+    background-color: gray;
+    flex-basis: 5vh;
+}
