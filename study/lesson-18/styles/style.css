@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: comic sans-serif;
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'Bitter' serif;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+
+.container {
+    width: 100vh;
+    min-width: 320px;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-basis: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 2vw;
+
+}
+
+header nav a {
+    display: block;
+    padding: 0.5vw 1vw;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+header nav a:hover {
+    border-bottom-color: rgb(105, 105, 105);
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    padding-top: 2vh;
+
+}
+
+main>aside {
+    flex-basis: 20%;
+
+}
+
+main>aside>div {
+    padding: 3% 10%;
+}
+
+main>aside>div>h3 {
+    text-transform: capitalize;
+}
+
+main>aside>div>* {
+    border-bottom: 2px solid rgb(105, 105, 105, 0.5);
+    margin-bottom: 2lvh;
+}
+
+
+.news {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+
+.news>* {
+    display: block;
+    padding-bottom: 7px;
+}
+
+strong,
+em {
+    font-size: .7rem;
+    /* padding: 1rem; */
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+main>section {
+    flex: 1 1 55%;
+}
+
+
+main>section>article>img {
+    width: 100%;
+}
+
+main>section+aside {
+    flex-basis: 20%;
+}
+
+main>section+aside figure * {
+    display: block;
+    padding-bottom: 7px;
+}
+
+main>section+aside figure img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+ 
+footer {
+    text-align: center;
+    padding: 1rem;
+    flex-basis: 5vh;
+}
+
+@media screen and (max-width: 970px) {
+    main>section+aside {
+    display: none;
+    }
+
+    main>aside {
+     flex-basis: 30%;
+    }
+
+    main>section {
+     flex-basis: 70%;
+    }
+ 
+}
+
+@media screen and (max-width:570px) {
+    main {
+      flex-direction: column;
+      padding: 3rem;
+    }
+    main>aside {
+     flex-basis: 15vh;
+     width: 100;
+
+
+    }
+
+    main>section {
+    flex-basis: auto;
+    order: -1;
+    }
+}

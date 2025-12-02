@@ -63,3 +63,18 @@ footer {
         flex-basis: 70%;
     }
 }
+
+@media screen and (max-width: 570px) {
+    main {
+        flex-direction: column;
+    }
+
+    main>aside {
+        flex-basis: 20vh;
+    }
+
+    main>section {
+        flex-basis: auto;
+        order: -1;
+    }
+}
