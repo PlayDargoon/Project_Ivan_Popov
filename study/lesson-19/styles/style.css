@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    margin: 2em;
+    border: 1px solid black;
+    display: flex;
+    /*Блочный*/
+    flex-direction: row;
+    /*направление основнйо оси*/
+    justify-content: flex-start;
+    /*растянуть - выравнивание в доль главной оси*/
+    align-items: stretch;
+    /*поперечная ось*/
+    flex-wrap: wrap;
+    /*переносить или нет*/
+
+    flex-flow: row wrap;
+
+    align-content: flex-start;
+    /*строки только в многострочном режиме как выровнены строки*/
+
+
+    height: 300px;
+    width: 1000px;
+    gap: 10px;
+
+
+
+}
+
+.flex>.block {
+
+    padding: 1rem;
+    text-align: center;
+    /* width: 250px; */
+    border: 2px solid gray;
+    flex-basis: 300px;
+
+    /*назначить базовый элемент по основной оси*/
+    flex-grow: 0;
+    /*растяжимость при исбыточном пространстве*/
+    flex-shrink: 1;
+    /*коэффициент уменшени ширины или всоты если не достаточно мсета*/
+    flex: 1 1 200px;
+
+
+
+}
+
+.block:last-child {
+    /* flex-grow: 0; */
+    /* order: -1; */
+    height: 150px;
+}
+
+.block:first-child {
+
+    order: 1;
+    align-self: flex-end;
+}
+
+.block:nth-child(2) {
+    align-self: flex-end;
+}
