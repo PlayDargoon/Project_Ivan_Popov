@@ -10,7 +10,7 @@ html {
 
 .container {
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -61,12 +61,12 @@ html {
 @media screen and (max-width: 760px) {
 
     .main-nav {
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
 
     .main-nav>nav {
-    order: -1;
-    width: 0;
+        order: -1;
+        width: 0;
     }
 
     .main-nav>nav>div {
@@ -75,11 +75,12 @@ html {
         flex-direction: column;
         align-items: center;
         background-color: #FFF;
-        top: 0; 
+        top: 0;
         left: 0;
         transform: translateY(8vh);
         height: 0;
         overflow: hidden;
+        transform: 0.2s;
 
     }
 
@@ -109,10 +110,80 @@ html {
 }
 
 header {
-     display: block;
-    background-color: blueviolet;
-    height: 14vw;
-    text-decoration: none;
+    height: 500px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        font-size: 0.9rem;
+        height: 350px;
+    }
+}
+
+main>section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main {
+    padding: 0 2VW;
+}
+
+main>section>h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 3em;
+}
+
+.row {
+    display: flex;
+    flex-flow: wrap;
+}
+
+#about .row>.col {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    min-width: 300px;
+
+}
+
+#about .col>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#about .row {
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
     
-    
+
+ 
+}
+
+.card>img {
+height: 50%;
+width: 50%;
+
+
+
+
 }
